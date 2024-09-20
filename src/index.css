@@ -1,13 +1,404 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin:0;
+  box-sizing: border-box;
+}
+header{
+  margin: 45px 110px 0;
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+nav{
+  color: black;
+  display: flex;
+  font-size: 1.5rem;
+  
+}
+
+nav a{
+  color: #000;
+  text-decoration: none;
+}
+.active{
+  color: black;
+  margin-right: 57px;
+  text-decoration: underline;
+}
+.welcome{
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+font-size: 2rem;
+padding: 1rem;
+box-sizing: border-box;
+  border-radius: 25px;
+  margin: 45px 110px 0;
+  color: white;
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+  ),url('assets/Image1.png')no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: 7px 5px 33px -13px #000000; 
+  box-shadow: 7px 5px 33px -13px #000000;
+}
+.container_cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.3rem;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 40px;
+  margin: 40px 110px;
+}
+
+.card{
+  border-radius: 18px ;
+  width: 29%;
+  justify-content: space-between;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.20)
+  ),#FF6060;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+img.card_image {
+  display: flex;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+
+}
+
+footer{
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+
+/* PAGE 404 */
+.fourzerofour{
+  min-height: 74vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title_404{
+  font-size: 12rem;
+  color: #FF6060;
+  margin: 2rem auto;
+}
+
+.texte_404{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #FF6060;;
+}
+
+/* ABOUT */
+.welcome_about{
+  height: 223px;
+  max-width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+font-size: 2rem;
+padding: 1rem;
+box-sizing: border-box;
+  border-radius: 25px;
+  margin: 45px auto 0;
+  color: white;
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+  ),url('assets/Image2.jpg')no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: 7px 5px 33px -13px #000000; 
+  box-shadow: 7px 5px 33px -13px #000000;
+  margin-bottom: 1.3rem;
+}
+
+
+ .container_description{
+  display: flex;
+  gap: 2rem;
+  margin-top: 140px;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  min-height: 57vh;
+  box-sizing: border-box;
+  max-width: 100%;
+ }
+
+.navbar_description {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.navbar_toogle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Correction pour bien espacer le titre et le bouton */
+  background-color: #FF6060;
+  color: white;
+  height: 54px;
+  border-radius: 5px 5px 0 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+  min-width: 80vw;
+}
+
+.navbar_toogle_title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0; /* Supprimer le margin par défaut pour un alignement parfait */
+}
+
+.navbar_toogle_btn {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer; /* Ajoute un curseur pour indiquer l'interaction */
+}
+
+.navbar_collapse {
+  background-color: #F6F6F6;
+  padding: 0;
+  text-align: left;
+  border-radius: 0 0 5px 5px; 
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; 
+  margin: 0 0px 2rem;
+}
+.navbar_collapse_description{
+  line-height: 2rem;
+}
+
+.navbar_collapse.open {
+  max-height: 300px; 
+  display: 
+  flex;
+  padding: 1rem;
+  transition: max-height 0.3s ease-in;
+  transition: padding 0.01s ease-in-out;
+}
+
+.navbar_arrow {
+  transition: transform 0.3s ease; 
+}
+
+.navbar_arrow.rotate {
+  transform: rotate(180deg); 
+}
+
+/* CARROUSEL LOGEMENT GALLERY */
+.fiche-logement {
+  min-height: 67vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.gallery_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery_prev, .gallery_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gallery_prev {
+  left: 10px;
+}
+
+.gallery_next {
+  right: 10px;
+}
+
+.gallery_counter {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.logement-description {
+  margin-top: 20px;
+}
+
+.host-info {
+  margin-top: 20px;
+}
+
+.host-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+/* LOGEMENT */
+.logement_infos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.appart_info{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.logement_title{
+color: #FF6060;
+text-transform: uppercase;
+font-size: 2rem;
+font-weight: 500;
+margin: 50px 0 0;
+}
+.logement_location{
+  font-weight: 500;
+  margin: 0 0 ;
+}
+.logement-description{
+
+}
+.host-info{
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  align-items: start;
+  margin: 50px 0 0 ;
+}
+.host-name{
+  font-weight: 500;
+  font-size: 18px;
+  color: #FF6060;
+  text-align: right;
+  margin: 0 15px 0 0 ;
+}
+
+.collapse{
+  width: 45%;
+}
+.collapse_info{
+  margin: 2rem auto ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.collapse_header{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    height: 54px;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+button.collapse_btn {
+  text-decoration: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+button.collapse_btn.open {
+  text-decoration: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transform: rotate(180deg); 
+}
+
+.hashtags{
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 1rem ;
+  align-items: center;
+}
+.hashtag{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  min-width: 115px ;
+  padding:  0 25px;
+  height: 35px;
+  background-color: #FF6060;
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .welcome{
+    font-size: 1.5rem;
+  }
+  .container_cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .card{
+    width: 100%;
+  }
 }
