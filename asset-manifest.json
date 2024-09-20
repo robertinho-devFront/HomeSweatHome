@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/HomeSweatHome/static/css/main.da97fc2e.css",
-    "main.js": "/HomeSweatHome/static/js/main.05c4cb99.js",
+    "main.js": "/HomeSweatHome/static/js/main.3264c9b5.js",
     "static/media/Image1.png": "/HomeSweatHome/static/media/Image1.969f0a4de80a6db1abb0.png",
     "static/media/Image2.jpg": "/HomeSweatHome/static/media/Image2.b7d97fa6d0e100b629db.jpg",
     "index.html": "/HomeSweatHome/index.html",
     "main.da97fc2e.css.map": "/HomeSweatHome/static/css/main.da97fc2e.css.map",
-    "main.05c4cb99.js.map": "/HomeSweatHome/static/js/main.05c4cb99.js.map"
+    "main.3264c9b5.js.map": "/HomeSweatHome/static/js/main.3264c9b5.js.map"
   },
   "entrypoints": [
     "static/css/main.da97fc2e.css",
-    "static/js/main.05c4cb99.js"
+    "static/js/main.3264c9b5.js"
   ]
 }
