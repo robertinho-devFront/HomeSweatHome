@@ -63,6 +63,7 @@ box-sizing: border-box;
 }
 
 .card{
+  text-decoration: none;
   border-radius: 18px ;
   width: 29%;
   justify-content: space-between;
@@ -369,12 +370,15 @@ button.collapse_btn.open {
 }
 
 .hashtags{
+  margin: 1rem 0;
   display: flex;
   flex-direction: row;
   font-size: 14px;
   font-weight: 700;
   gap: 1rem ;
   align-items: center;
+  flex-wrap: wrap;
+
 }
 .hashtag{
   display: flex;
