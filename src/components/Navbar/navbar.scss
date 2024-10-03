@@ -1,0 +1,66 @@
+.container_description{
+    display: flex;
+    margin-top: 140px;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    min-height: 57vh;
+    box-sizing: border-box;
+    max-width: 100%;
+   }
+  
+  .navbar_description {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .navbar_toogle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Correction pour bien espacer le titre et le bouton */
+    background-color: #FF6060;
+    color: white;
+    height: 54px;
+    border-radius: 5px 5px 0 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    min-width: 80vw;
+  }
+  
+  .navbar_toogle_title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0; /* Supprimer le margin par défaut pour un alignement parfait */
+  }
+  
+  .navbar_toogle_btn {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; /* Ajoute un curseur pour indiquer l'interaction */
+  }
+  
+  
+  .navbar_arrow {
+    transition: transform 0.3s ease; 
+  }
+  
+  .navbar_arrow.rotate {
+    transform: rotate(180deg); 
+  }
+
+  .navbar_collapse {
+    max-height: 0; /* Par défaut, caché */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; /* Transition pour une ouverture fluide */
+    padding: 0;
+}
+
+.navbar_collapse.open {
+    max-height: 300px; /* Définissez une hauteur pour l'état ouvert */
+    padding: 1rem;
+}

@@ -1,29 +1,38 @@
-import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Remplace BrowserRouter par HashRouter
-import Header from './components/Header'; 
-import Welcome from './components/Welcome';
-import Gallery from './components/Gallery';
-import ContainerCards from './components/ContainerCards';
-import Footer from './components/Footer';
-import About from './components/About';
-import NotFound from './components/NotFound';
-import FicheLogement from './components/FicheLogement'; // Import du nouveau composant
-import './App.css';
+import React from "react";
+import { HashRouter as Router, Route, Routes } from "react-router-dom"; 
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import NotFound from "./pages/NotFound";
+import FicheLogement from "./pages/FicheLogement"; 
+import "./App.css";
+
+const Layout = ({ children }) => {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
 const App = () => {
-    return (
-        <Router>
-            <Header />
-            <Routes>
-                <Route path="/" element={<><Welcome /><ContainerCards /></>} /> {/* Page d'accueil */}
-                <Route path="/about" element={<About />} />
-                <Route path="/gallery" element={<Gallery />} />
-                <Route path="/logement/:id" element={<FicheLogement />} /> {/* Page de détail logement */}
-                <Route path="*" element={<NotFound />} /> {/* Page 404 */}
-            </Routes>
-            <Footer />
-        </Router>
-    );
+  return (
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} /> 
+          <Route path="/about" element={<About />} /> 
+          <Route path="/logement/:id" element={<FicheLogement />} /> 
+          <Route path="*" element={<NotFound />} /> 
+        </Routes>
+      </Layout>
+    </Router>
+  );
 };
 
 export default App;

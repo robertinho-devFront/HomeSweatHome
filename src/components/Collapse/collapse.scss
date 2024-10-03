@@ -1,0 +1,55 @@
+
+  .navbar_collapse_description{
+    line-height: 2rem;
+  }
+  
+
+  .collapse {
+    width: 45%;
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .collapse_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    padding: 15px;
+    cursor: pointer; 
+    max-height : 23px;
+  }
+  .collapse_info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button.collapse_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  button.collapse_btn svg {
+    transition: transform 0.3s ease;
+  }
+  
+  button.collapse_btn.open svg {
+    transform: rotate(180deg);
+  }
+  
+  .collapse_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease; 
+    background-color: #F6F6F6;
+    padding: 0 15px;
+  }
+  
+  .collapse_content.open {
+    max-height: 200px; 
+    padding: 15px;
+  }
