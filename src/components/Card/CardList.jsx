@@ -14,7 +14,7 @@ const CardList = ({ logements }) => {
           cover={logement.cover}
         />
       ))}
-    </div>
+    </div> 
   );
 };
 
