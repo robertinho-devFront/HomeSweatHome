@@ -1,0 +1,13 @@
+.hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .hashtag {
+    background-color: #ff6060;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+  }
+  

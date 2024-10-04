@@ -1,9 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import useLogements from "../hooks/useLogements"; 
-
 import Gallery from '../components/Gallery/Gallery';
 import Collapse from '../components/Collapse/Collapse';
+import Rating from '../components/Rating/Rating';
+import Hashtag from '../components/Hastag/Hastag'; 
 
 const HostInfo = ({ host }) => {
   const hostName = host.name.split(" ");
@@ -18,18 +19,6 @@ const HostInfo = ({ host }) => {
         alt={host.name}
         className="host-picture"
       />
-    </div>
-  );
-};
-
-const Hashtags = ({ tags }) => {
-  return (
-    <div className="hashtags">
-      {tags.map((tag, index) => (
-        <span key={index} className="hashtag">
-          {tag}
-        </span>
-      ))}
     </div>
   );
 };
@@ -56,7 +45,10 @@ const FicheLogement = () => {
         <HostInfo host={logement.host} />
       </div>
 
-      <Hashtags tags={logement.tags} />
+      <div className="rating-and-hashtags">
+        <Hashtag tags={logement.tags} />
+        <Rating rating={parseInt(logement.rating)} /> 
+      </div>
 
       <div className="collapse_info">
         <Collapse title="Description">

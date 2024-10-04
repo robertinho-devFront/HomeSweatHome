@@ -1,0 +1,15 @@
+.rating {
+    display: flex;
+    gap: 5px;
+
+    .star {
+        width: 24px;
+        height: 24px;
+    }
+}
+.rating-and-hashtags {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
