@@ -10,11 +10,11 @@ img.card_image {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 3.3rem;
     border-radius: 25px;
-    padding: 40px;
-    margin: 40px 110px;
+    padding: 0px;
+    margin: 40px 6rem;
 }
 
 
@@ -42,13 +42,14 @@ img.card_image {
     }
 
     h3 {
-        width: 100%;
-        text-align: center;
+        width: 90%;
+        text-align: left;
         align-items: flex-end;
         padding: 10px;
         margin: 0;
         position: absolute;
-        bottom: 0;
+        bottom: 1rem;
+        left: 1rem;
         z-index: 2;
         border-radius: 0 0 18px 18px;
     }
@@ -69,9 +70,15 @@ img.card_image {
 @media only screen and (max-width: 1024px) {
     .container_cards {
         flex-direction: column;
+        margin: 40px 2rem;
     }
 
     .card {
         width: 100%;
+        h3{
+            bottom: 0;
+            left: 0;
+        }
     }
+
 }

@@ -7,7 +7,7 @@
   padding: 1rem;
   box-sizing: border-box;
     border-radius: 25px;
-    margin: 45px 110px 0;
+    margin: 45px 6rem 0;
     color: white;
     background:linear-gradient(
         rgba(0, 0, 0, 0.45), 
@@ -16,11 +16,11 @@
     background-size: cover;
     -webkit-box-shadow: 7px 5px 33px -13px #000000; 
     box-shadow: 7px 5px 33px -13px #000000;
+    
   }
 
   .welcome_about{
     height: 223px;
-    max-width: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
   padding: 1rem;
   box-sizing: border-box;
     border-radius: 25px;
-    margin: 45px auto 0;
+    margin: 45px 6rem 0;
     color: white;
     background:linear-gradient(
         rgba(0, 0, 0, 0.45), 
@@ -39,4 +39,13 @@
     box-shadow: 7px 5px 33px -13px #000000;
     margin-bottom: 1.3rem;
   }
-  
+
+  header{
+
+  }
+  @media only screen and (max-width: 1024px) {
+    .welcome{
+      margin: 45px 6rem 0;
+      font-size: 1.33rem;
+    }
+}

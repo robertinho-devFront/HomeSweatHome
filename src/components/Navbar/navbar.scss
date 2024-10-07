@@ -1,12 +1,13 @@
 .container_description{
     display: flex;
-    margin-top: 140px;
+    margin-top: 3rem;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
     min-height: 57vh;
     box-sizing: border-box;
     max-width: 100%;
+    gap: 2rem;
    }
   
   .navbar_description {
@@ -15,6 +16,7 @@
     max-width: 80vw;
     margin: 0 auto;
     box-sizing: border-box;
+    background-color: #F6F6F673;
   }
   
   .navbar_toogle {

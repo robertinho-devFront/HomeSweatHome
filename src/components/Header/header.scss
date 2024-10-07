@@ -1,18 +1,25 @@
 header{
-    margin: 45px 110px 0;
+    margin: 45px 6rem 0;
     height: 68px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    nav{
+      gap: 2rem;
+    }
   }
   nav{
     color: black;
     display: flex;
     font-size: 1.5rem;
-    gap: 2rem;
+  
 
+  }
+  .logo{
+    max-width: 211px;
+    width: 100%;
   }
   
   nav a{
@@ -25,3 +32,16 @@ header{
     padding: 0 0 4px 0;
   }
   
+@media only screen and (max-width: 1024px) {
+  header{
+    flex-direction: column;
+    margin: 45px 2rem 0;
+  }
+  nav{
+    margin-top: 20px;
+  }
+  .logo{
+    max-width: 1000px !important;
+    width: 100%;
+  }
+}
