@@ -1,6 +1,7 @@
 import React from 'react';
-import ContainerDescription from '../components/Navbar/ContainerDescription'; 
-import '../components/Navbar/navbar.scss';
+import ContainerDescription from '../../components/Navbar/ContainerDescription'; 
+import '../../components/Navbar/navbar.scss';
+import '../../pages/About/about.scss'
 
 const About = () => {
     return (

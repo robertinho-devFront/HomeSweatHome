@@ -19,27 +19,6 @@
     
   }
 
-  .welcome_about{
-    height: 223px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  font-size: 2rem;
-  padding: 1rem;
-  box-sizing: border-box;
-    border-radius: 25px;
-    margin: 45px 6rem 0;
-    color: white;
-    background:linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-    ),url('../../assets/Image2.jpg')no-repeat center;
-    background-size: cover;
-    -webkit-box-shadow: 7px 5px 33px -13px #000000; 
-    box-shadow: 7px 5px 33px -13px #000000;
-    margin-bottom: 1.3rem;
-  }
-
   header{
 
   }

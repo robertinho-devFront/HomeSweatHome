@@ -23,7 +23,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Correction pour bien espacer le titre et le bouton */
+    justify-content: space-between; 
     background-color: #FF6060;
     color: white;
     height: 54px;
@@ -36,14 +36,14 @@
   .navbar_toogle_title {
     font-size: 1.3rem;
     font-weight: 700;
-    margin: 0; /* Supprimer le margin par défaut pour un alignement parfait */
+    margin: 0; 
   }
   
   .navbar_toogle_btn {
     text-decoration: none;
     border: none;
     background-color: transparent;
-    cursor: pointer; /* Ajoute un curseur pour indiquer l'interaction */
+    cursor: pointer; 
   }
   
   
@@ -56,13 +56,13 @@
   }
 
   .navbar_collapse {
-    max-height: 0; /* Par défaut, caché */
+    max-height: 0; 
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; /* Transition pour une ouverture fluide */
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; 
     padding: 0;
 }
 
 .navbar_collapse.open {
-    max-height: 300px; /* Définissez une hauteur pour l'état ouvert */
+    max-height: 300px; 
     padding: 1rem;
 }

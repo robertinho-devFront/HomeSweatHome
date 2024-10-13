@@ -1,10 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import useLogements from "../hooks/useLogements"; 
-import Gallery from '../components/Gallery/Gallery';
-import Collapse from '../components/Collapse/Collapse';
-import Rating from '../components/Rating/Rating';
-import Hashtag from '../components/Hastag/Hastag'; 
+import useLogements from "../../hooks/useLogements"; 
+import Gallery from '../../components/Gallery/Gallery';
+import Collapse from '../../components/Collapse/Collapse';
+import Rating from '../../components/Rating/Rating';
+import Hashtag from '../../components/Hastag/Hastag'; 
+import '../../pages/Logement/logement.scss'
 
 const HostInfo = ({ host }) => {
   const hostName = host.name.split(" ");

@@ -1,9 +1,9 @@
 
 import { Link } from 'react-router-dom';
-import useLogements from "../hooks/useLogements";
-import Welcome from '../components/Welcome/Welcome'; 
+import useLogements from "../../hooks/useLogements";
+import Welcome from '../../components/Welcome/Welcome'; 
 
-import '../components/Card/card.scss';
+import '../../components/Card/card.scss';
 
 
 
