@@ -69,7 +69,9 @@ img.card_image {
 
 @media only screen and (max-width: 1024px) {
     .container_cards {
+        display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         margin: 40px 2rem;
     }
 
@@ -82,3 +84,4 @@ img.card_image {
     }
 
 }
+

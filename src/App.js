@@ -30,7 +30,6 @@ const App = () => {
           <Route path="/logement/:id" element={<FicheLogement />} /> 
           <Route path="*" element={<NotFound />} /> 
         </Routes>
-        <p className="hidden">renders learn react link</p>
       </Layout>
     </Router>
   
