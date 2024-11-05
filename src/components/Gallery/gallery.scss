@@ -16,7 +16,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background:transparent;
   color: white;
   border: none;
   padding: 10px;
@@ -36,7 +36,7 @@
   position: absolute;
   bottom: 10px;
   right: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -65,4 +65,15 @@
   align-items: center;
   gap: 15px;
   justify-content: space-between;
+}
+
+.arrow{
+  width: 100%;
+  max-width: 119px;
+}
+@media only screen and (max-width: 1024px) {
+  .arrow{
+    width: 100%;
+    max-width: 2.5rem;
+  }
 }

@@ -25,6 +25,7 @@
   .collapse_info {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
   }
   
   button.collapse_btn {
@@ -51,6 +52,12 @@
   }
   
   .collapse_content.open {
-    max-height: 200px; 
+    max-height: 100%; 
     padding: 15px;
+  }
+  @media only screen and (max-width: 1024px) {
+    .collapse_info {
+
+      gap: 0px;
+    }
   }
